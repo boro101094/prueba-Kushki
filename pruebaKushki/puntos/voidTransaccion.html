@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Prueba Kushki</title>
+<meta charset="UTF-8">
+<!--jquery/ajax-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../js/voidTransaccion.js"></script>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+<div class="d-flex justify-content-center ">
+    <div class="card listado" >
+        <div class="card-header">
+            <h1>Obtener Información de Subscripción</h1>
+        </div>
+        <div style="margin:25px">
+            <div class="form-group">
+                <label for="numTran">Ingrese Número de Transacción:</label>
+                <input type="text" class="form-control" id="numTran" placeholder="Ingrese número de Transacción" required>
+                <small id="ayudaTrans" class="form-text text-muted">Número de Transacción.</small>
+            </div>    
+            <input type="button" id="anularTran" class="btn btn-primary" value="Anular"></input>
+        </div>
+        <div class="card-header">
+            <a href="../" class="btn btn-primary opcion" role="button">Regresar Inicio</a>
+        </div>
+    </div>
+
+</div>

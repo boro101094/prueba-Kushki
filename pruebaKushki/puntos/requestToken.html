@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Request Subscription Token</title>
+<script src="https://cdn.kushkipagos.com/kushki.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../js/getSubscriptionToken.js"></script>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+<div class="d-flex justify-content-center ">
+    <div class="card listado" >
+        <div class="card-header">
+            <h1>Obtener Token y Suscripción</h1>
+        </div>
+        <div class="card-header">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Datos: </br>Nombre:Boris Cabrera</br>Número de Tarjeta: 4544980425511225 </br>Cvc: 345</br>Mes Caducidad: 12</br>Año Caducidad: 28</li>
+                <li class="list-group-item"><button class="btn btn-primary opcion" role="button" onclick="requestSubscriptionToken('Boris', '4544980425511225', '345', '12', '28')">Obtener Token de Subcripcion</button></li>
+                <li class="list-group-item"><label id="subscriptionToken">Subcription Token:</label></li>
+                <li class="list-group-item"><button class="btn btn-primary opcion" role="button" onclick="createSubscription()">Crear Subscripcion</button></li>
+                <li class="list-group-item"><label id="subscriptionID">Subcription ID:</label></li>
+                <li class="list-group-item"><a href="../" class="btn btn-primary opcion" role="button">Regresar Inicio</a></li>
+            </ul>
+        </div>
+   
+    </div>
+
+</div>
